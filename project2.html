@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="project2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3bccc2a64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id = "main">
+        <div id = "heading">
+            <p id = "mainheading">AGASTHYA'S SPORTS SHOP</p>
+        </div>
+        <div id = "left">
+            <div class = "flexitems">
+                <p class = "headingitem">Volley Ball</p>
+                <img class = "picitem" src = "project2img1.png" alt="Volley Ball">
+                <p class = "pricetag">₹2000</p>
+                <button class = "buttonitem" onclick="myfunction1()">ADD TO CART</button>
+            </div>
+            <div class = "flexitems">
+                <p class = "headingitem">Hockey Bat</p>
+                <img class = "picitem" src = "project2img2.jpg" alt="Volley Ball">
+                <p class = "pricetag">₹3000</p>
+                <button class = "buttonitem" onclick="myfunction2()">ADD TO CART</button>
+            </div>
+            <div class = "flexitems">
+                <p class = "headingitem">Shuttle Bat</p>
+                <img class = "picitem" src = "project2img3.jpg" alt="Volley Ball">
+                <p class = "pricetag">₹2300</p>
+                <button class = "buttonitem" onclick="myfunction3()">ADD TO CART</button>
+            </div>
+            <div class = "flexitems">
+                <p class = "headingitem">Foot Ball</p>
+                <img class = "picitem" src = "project2img4.png" alt="Volley Ball">
+                <p class = "pricetag">₹3400</p>
+                <button class = "buttonitem" onclick="myfunction4()">ADD TO CART</button>
+            </div>
+        </div>
+        <div id = "right">
+            <p id = "mycartheading">MY CART</p>
+            <div id = "column1">
+                <p id = "colhead1">ITEM</p>
+                <div class = "itemelements">
+                    <img class = "itempics"src="project2img1.png" alt="basketball">
+                    <p class = "itempicsmatter">Volley<br>Ball</p>
+                </div>
+                <div class = "itemelements">
+                    <img class = "itempics"src="project2img2.jpg" alt="basketball">
+                    <p class = "itempicsmatter">Hockey<br>Bat</p>
+                </div>
+                <div class = "itemelements">
+                    <img class = "itempics"src="project2img3.jpg" alt="basketball">
+                    <p class = "itempicsmatter">Shuttle<br>Bat</p>
+                </div>
+                <div class = "itemelements">
+                    <img class = "itempics"src="project2img4.png" alt="basketball">
+                    <p class = "itempicsmatter">Foot<br>Ball</p>
+                </div>
+            </div>
+            <div id = "column2">
+                <p id = "colhead2">PRICE</p>
+                <div class = "pricematter"><p class = "price">₹2000</p></div>
+                <div class = "pricematter"><p class = "price">₹3000</p></div>
+                <div class = "pricematter"><p class = "price">₹2300</p></div>
+                <div class = "pricematter"><p class = "price">₹3400</p></div>
+            </div>
+            <div id = "column3">
+                <p id = "colhead3">QUANTITY</p>
+                <div class = "quantitymatter">
+                    <p class = "quantity">0</p>
+                    <button class = "removebutton" onclick="notmyfunction1()">REMOVE</button>
+                </div>
+                <div class = "quantitymatter">
+                    <p class = "quantity">0</p>
+                    <button class = "removebutton" onclick="notmyfunction2()">REMOVE</button>
+                </div>
+                <div class = "quantitymatter">
+                    <p class = "quantity">0</p>
+                    <button class = "removebutton" onclick="notmyfunction3()">REMOVE</button>
+                </div>
+                <div class = "quantitymatter">
+                    <p class = "quantity">0</p>
+                    <button class = "removebutton" onclick="notmyfunction4()">REMOVE</button>
+                </div>
+            </div>
+            <div id = "paydiv">
+                <p id = "totalprice">TOTAL PRICE = 0</p>
+                <div id = "paydiv2">
+                    <button id = "paybutton">PAY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="project2.js"></script>
+</body>
+</html>

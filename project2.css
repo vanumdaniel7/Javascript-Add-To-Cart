@@ -1,0 +1,300 @@
+*
+{
+    margin: 0px;
+}
+#main
+{
+    height: 850px;
+}
+#left
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 68%;
+    margin-left: 2%;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#right
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 28%;
+    height: 620px;
+    position: fixed;
+    margin-right: 1%;
+    right: 0%;
+}
+#heading
+{
+    margin-bottom: 20px;
+    z-index: 1000;
+    height: 75px;
+    position: sticky;
+    top: 0px;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
+}
+#mycartheading
+{
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+#column1
+{
+    width: 35%;
+    float: left;
+}
+#column2
+{
+    margin-left: 6px;
+    float: left;
+    width: 28%;
+}
+#column3
+{
+    width: 32%;
+    float: right;
+}
+#colhead1,#colhead2,#colhead3
+{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.itempics
+{
+    z-index: -1000;
+    position: relative;
+    top: 15%;
+    width: 30%;
+    margin-left: 5px;
+}
+.itempicsmatter
+{
+    margin-top: 10%;
+    text-align: center;
+    display: inline;
+    width: 50%;
+    float: right;
+}
+.itemelements
+{
+    display: none;
+    border-bottom: 1px solid black;
+    height: 60px;
+    margin-top: 30px;
+}
+.pricematter
+{
+    display: none;
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+    height: 60px;
+    text-align: center;
+}
+.price
+{
+    position: relative;
+    top: 53%;
+}
+.quantitymatter
+{
+    display: none;
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+    height: 60px;
+    text-align: center;
+}
+.quantity
+{
+    margin-right: 10px;
+    display: inline;
+    position: relative;
+    top: 43%;
+}
+.removebutton
+{
+    font-size: 12px;
+    height: 30px;
+    background-color: #dc5b4e;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    position: relative;
+    top: 43%;
+    cursor: pointer;
+    width: 65%;
+}
+.flexitems
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+}
+.headingitem
+{
+    margin-top: 10px;
+    text-align: center;
+}
+.picitem
+{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+.pricetag
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.buttonitem
+{
+    display: block;
+    margin: auto;
+    color: white;
+    font-weight: 600;
+    background-color: #4ec1f2;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.buttonitem:hover
+{
+    background-color: #00b7ff;
+}
+#mainheading
+{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    top: 30%;
+    color: white;
+}
+#heading
+{
+    background-color: #00b7ff;
+}
+#column1,#column2,#column3
+{
+    margin-bottom: 30px;
+}
+#paybutton
+{
+    color: white;
+    font-weight: 600;
+    background-color: #4ec1f2;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    position: absolute;
+    top: 110px;
+    right: 1%;
+}
+#totalprice
+{
+    transition-duration: 0.3s;
+    float: left;
+    margin-left: 15px;
+    position: absolute;
+    top: 110px;
+}
+#paybutton:hover
+{
+    background-color: #00b7ff;
+}
+@media only screen and (max-width: 1150px)
+{
+	#left
+    {
+        height: 1500px;
+        width: 47%;
+    }
+    #right
+    {
+        width: 48%;
+        height: 600px;
+    }
+    #main
+    {
+        height: 1625px;
+    }
+}
+@media only screen and (max-width: 700px)
+{
+    #right
+    {
+        position: relative;
+        width: 90%;
+        left: 5%;
+        float: left;
+        clear: left;
+        margin-top: 50px;
+    }
+    #left
+    {
+        position: relative;
+        width: 90%;
+        left: 3%;
+    }
+    #main
+    {
+        height: 1500px;
+    }
+}
+@media only screen and (max-width: 370px)
+{
+    .itempics
+    {
+        display: none;
+    }
+    .itemelements
+    {
+        text-align: center;
+    }
+    .itempicsmatter
+    {
+        width: 100%;
+        display: block;
+    }
+    .quantity
+    {
+        top: 26px;
+    }
+    .removebutton
+    {
+        top: 26px;
+    }
+    #paybutton
+    {
+        position: absolute;
+        top: 150px;
+        left: 4%;
+    }
+    .removebutton
+    {
+        font-size: 9px;
+        position: relative;
+        left: -12px;
+        top: 43%;
+        cursor: pointer;
+        width: 60%;
+        margin-left: 5px;
+    }
+    .quantity
+    {
+        left: -2px;
+    }
+}
